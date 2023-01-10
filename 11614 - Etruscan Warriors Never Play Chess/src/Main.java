@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String args[]){
-
+    public static void main(String[] args)
+    {
         Scanner s = new Scanner(System.in);
-
-        while(s.hasNext()){
-            int v = s.nextInt();
-            int t = s.nextInt();
-            System.out.println(2*(v*t));
+        s.nextInt();
+        while(s.hasNextInt())
+        {
+            int n = s.nextInt();
+            int i = (int) Math.floor(Math.sqrt((2 * n) + 0.25) - 0.5);
+            System.out.println(i);
         }
+        s.close();
     }
 }
