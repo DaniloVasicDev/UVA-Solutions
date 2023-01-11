@@ -6,7 +6,8 @@ public class Main {
         int i = 0;
         while (i < t) {
             int n = s.nextInt();
-            System.out.println((((((((n * 567) / 9) + 7492) * 235) / 47) - 498) / 10) % 10);
+            int ans = ((((((((n * 567) / 9) + 7492) * 235) / 47) - 498) / 10) % 10);
+            System.out.println(Math.abs(ans));
             i++;
         }
         s.close();
