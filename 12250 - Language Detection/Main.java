@@ -5,32 +5,34 @@ public class Main {
         Scanner s = new Scanner(System.in);
 
         String word = "";
+        int i = 1;
         while (s.hasNext()) {
             word = s.nextLine();
             if(!word.equals("#")) {
                 switch (word) {
                     case "HELLO":
-                        System.out.println("Case 1: ENGLISH");
+                        System.out.println("Case "+i+": ENGLISH");
                         break;
                     case "HOLA":
-                        System.out.println("Case 2: SPANISH");
+                        System.out.println("Case "+i+": SPANISH");
                         break;
                     case "HALLO":
-                        System.out.println("Case 3: GERMAN");
+                        System.out.println("Case "+i+": GERMAN");
                         break;
                     case "BONJOUR":
-                        System.out.println("Case 4: FRENCH");
+                        System.out.println("Case "+i+": FRENCH");
                         break;
                     case "CIAO":
-                        System.out.println("Case 5: ITALIAN");
+                        System.out.println("Case "+i+": ITALIAN");
                         break;
                     case "ZDRAVSTVUJTE":
-                        System.out.println("Case 6: RUSSIAN");
+                        System.out.println("Case "+i+": RUSSIAN");
                         break;
                     default:
-                        System.out.println("UNKNOWN");
+                        System.out.println("Case "+i+": UNKNOWN");
                         break;
                 }
+                i++;
             }
             else{
                 System.exit(0);
