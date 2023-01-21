@@ -5,22 +5,19 @@ public class Main {
         Scanner s = new Scanner(System.in);
         int T = s.nextInt();
         int x = 1;
+        int max  = 0;
         while (T-->0){
-            int N = s.nextInt()-1;
-            int cur = s.nextInt();
-            int max = cur;
-            while (N-->0){
-                int next = s.nextInt();
-                if(cur>next){
-                    max = cur;
-                }
-                else if(cur<next){
-                    max = next;
-                }
-            }
+            int N  = s.nextInt();
+             for(int i =0;i<N;i++){
+                 int num = s.nextInt();
+                 if(num>max){
+                     max = num;
+                 }
+             }
             System.out.println("Case "+x+": "+max);
             x++;
+            max = 0;
+            }
         }
-        s.close();
+
     }
-}
